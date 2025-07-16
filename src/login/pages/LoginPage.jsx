@@ -1,12 +1,6 @@
-import { useState } from 'react';
-import styles from './Login.module.css';
+import styles from './LoginPage.module.css';
 
 const Login = () => {
-  const [userName, setUserName] = useState('');
-  const [password, setPassword] = useState('');
-
-  console.log(userName);
-
   return (
     <>
       <div className={styles.container_login}>
@@ -30,19 +24,9 @@ const Login = () => {
             <form action="submit">
               <div className={styles.form_login_container}>
                 <label htmlFor="username">Usuario</label>
-                <input
-                  type="text"
-                  value={userName}
-                  placeholder="Ingrese su usuario"
-                  onChange={({ target }) => setUserName(target.value)}
-                />
+                <input type="text" placeholder="Ingrese su usuario" />
                 <label htmlFor="password">Contraseña</label>
-                <input
-                  type="password"
-                  placeholder="Contraseña"
-                  value={password}
-                  onChange={({ target }) => setPassword(target.value)}
-                />
+                <input type="password" placeholder="Contraseña" />
 
                 <button type="submit">Ingresar</button>
               </div>

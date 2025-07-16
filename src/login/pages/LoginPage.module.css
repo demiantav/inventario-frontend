@@ -28,7 +28,12 @@
     header {
       text-align: center;
       h1 {
-        font-size: 3rem;
+        font-size: clamp(2.5rem, 2.1522rem + 1.7391vw, 3.5rem);
+        line-height: 1.5;
+      }
+
+      p {
+        font-size: clamp(1rem, 0.9565rem + 0.2174vw, 1.125rem);
       }
     }
   }
@@ -40,7 +45,7 @@
   padding: 1rem;
   width: clamp(15.625rem, 11.2772rem + 21.7391vw, 28.125rem);
   height: 100%;
-  gap: 1rem;
+  gap: 0.9rem;
 
   input {
     padding: 0.9rem;
