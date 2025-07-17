@@ -1,9 +1,9 @@
-import Login from '../login/pages/LoginPage';
+import LoginPage from '../features/login/pages/LoginPage';
 
 function App() {
   return (
     <>
-      <Login></Login>
+      <LoginPage></LoginPage>
     </>
   );
 }

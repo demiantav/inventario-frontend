@@ -11,12 +11,12 @@
 .container_login {
   display: grid;
   grid-template-columns: 1fr;
-  height: 100dvh;
 }
 
 .main_login {
   display: grid;
   place-items: center;
+  min-height: 100dvh;
 
   section {
     display: flex;
@@ -55,7 +55,7 @@
 
   button {
     padding: 0.5rem;
-    background-color: rgba(17, 11, 34, 0.945);
+    background-color: #011a33;
     color: white;
     font-weight: bold;
   }
@@ -65,7 +65,7 @@
   .container_login {
     grid-template-columns: minmax(250px, 25%) 1fr;
 
-    .header_login {
+    header {
       height: auto;
     }
   }
